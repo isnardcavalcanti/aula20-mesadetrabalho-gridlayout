@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas:
+    'header header'
+    'aside main'
+}
+body header{
+    background-color: darkgoldenrod;
+    grid-area: header;
+    height: 40px;
+}
+header h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+body aside{
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+}
+a { 
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+    margin: 10px;
+    text-align: center;
+}
+li:hover{
+    background-color: darkred;
+    padding: 10px;
+}
+main img {
+    width: 100vh;
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+}
+main p {
+    text-align: center;
+    font-size: 16px;
+    margin: 10px 0px 0 20px;
+}
